@@ -141,7 +141,27 @@ The Complaint describes each type of user complaint prescribed by the GDPR. It p
     \label{fig:DataRights}
 \end{figure}
 \subsubsection{Notifications}
+The NotificationInfo is an abstract class. Generalizes the types of actions in the system based on which the system creates user notifications. The GDPR quotes the notifications as an essential functionality of the information system. Articles 19 and 33 define situations in which the system should notify data owners or data processors. There are two groups of notifications. The first one is data processing related, and the second one is complaint related. Consequently, PrivacyStatement and Complaint inherit the NotificationInfo. The Notification contains information about concrete notification, such as date-time, NotificationType, receivers, notifiers and concrete action in the model that expresses the causedBy object. The NotifionType enumeration presents types of described notifications in Articles 19 and 33.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12.5cm]{images/notification.jpg}
+    \caption{Detailed view of the notification set of concepts}
+    \label{fig:Notifications}
+\end{figure}
 \subsubsection{Enumerations}
+There is a detailed overview of all used enumerations.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12.5cm]{images/enums1.jpg}
+    \caption{Detailed view of the used enums - part1}
+    \label{fig:Enums1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12.5cm]{images/enums2.jpg}
+    \caption{Detailed view of the used enums - part2}
+    \label{fig:Enums2}
+\end{figure}
 \subsection{OCL validations}
 \section{Case study}
 \section{Discussion}
